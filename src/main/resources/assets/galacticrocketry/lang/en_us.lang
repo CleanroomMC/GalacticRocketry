@@ -1,0 +1,5 @@
+galacticrocketry.command.usage=Usage: /gr <tp>
+
+galacticrocketry.command.tp.usage=Usage: /gr tp <x> <y> <z> <dimId>
+galacticrocketry.command.tp.invalid_dim=Dimension %s does not exist!
+galacticrocketry.command.tp.success=Teleported to %s, %s, %s in Dimension %s
