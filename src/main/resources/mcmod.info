@@ -1,16 +1,18 @@
 [
-{
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["CleanroomMC"],
-  "credits": "Authors of this project",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
-}
+  {
+    "modid": "galacticrocketry",
+    "name": "Galactic Rocketry",
+    "description": "A new space mod for 1.12.2.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "CleanroomMC"
+    ],
+    "credits": "ALongStringOfNumbers, TechLord22",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
 ]
