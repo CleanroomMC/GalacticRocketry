@@ -3,7 +3,7 @@ package com.cleanroommc.config;
 import com.cleanroommc.GalacticRocketry;
 import net.minecraftforge.common.config.Config;
 
-@Config(modid = GalacticRocketry.MODID)
+@Config(modid = GalacticRocketry.MODID, name = GalacticRocketry.MODID + "/" + GalacticRocketry.MODID)
 public class GRConfig {
 
     public static Dimensions dimensions = new Dimensions();

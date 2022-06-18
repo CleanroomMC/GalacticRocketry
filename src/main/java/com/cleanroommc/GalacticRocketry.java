@@ -2,9 +2,11 @@ package com.cleanroommc;
 
 import com.cleanroommc.api.world.GRDimensions;
 import com.cleanroommc.command.GRCommand;
+import com.cleanroommc.config.GRDataReader;
 import com.cleanroommc.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
@@ -22,6 +24,7 @@ public class GalacticRocketry {
 
     @Mod.EventHandler
     public static void onPreInit(@Nonnull FMLPreInitializationEvent event) {
+        GRDataReader.read();
         GRDimensions.init();
     }
 
