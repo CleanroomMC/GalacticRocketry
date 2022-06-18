@@ -1,4 +1,4 @@
-package com.cleanroommc.api.word.generator;
+package com.cleanroommc.api.world.generator;
 
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.init.Biomes;

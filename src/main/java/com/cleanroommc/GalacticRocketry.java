@@ -1,6 +1,6 @@
 package com.cleanroommc;
 
-import com.cleanroommc.api.word.GRDimensions;
+import com.cleanroommc.api.world.GRDimensions;
 import com.cleanroommc.command.GRCommand;
 import com.cleanroommc.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;

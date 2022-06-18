@@ -75,6 +75,34 @@ public class SpaceSkyRenderer extends IRenderHandler {
         GlStateManager.tryBlendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
         GlStateManager.pushMatrix();
         GlStateManager.rotate(world.getCelestialAngle(partialTicks) * 360.0F, 1.0F, 1.0F, 1.0F); // rotating stars in the x, y, and z instead of x only because it's cool
+
+        /*
+        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F - world.getRainStrength(partialTicks));
+        GlStateManager.rotate(-90.0F, 0.0F, 1.0F, 0.0F);
+        GlStateManager.rotate(world.getCelestialAngle(partialTicks) * 360.0F, 1.0F, 0.0F, 0.0F); // if used, remove the above star rotation
+        renderGlobal.renderEngine.bindTexture(SUN_TEXTURES);
+        bufferbuilder.begin(7, DefaultVertexFormats.POSITION_TEX);
+        bufferbuilder.pos(-30.0F, 100.0D, (-30.0F).tex(0.0D, 0.0D).endVertex();
+        bufferbuilder.pos(30.0F, 100.0D, -30.0F).tex(1.0D, 0.0D).endVertex();
+        bufferbuilder.pos(30.0F, 100.0D, 30.0F).tex(1.0D, 1.0D).endVertex();
+        bufferbuilder.pos(-30.0F, 100.0D, 30.0F).tex(0.0D, 1.0D).endVertex();
+        tessellator.draw();
+        renderGlobal.renderEngine.bindTexture(MOON_PHASES_TEXTURES);
+        int moonPhase = world.getMoonPhase();
+        int moonPhaseMajor = moonPhase % 4;
+        int moonPhaseMinor = moonPhase / 4 % 2;
+        float f1 = (moonPhaseMajor) / 4.0F;
+        float f2 = (moonPhaseMinor) / 2.0F;
+        float f3 = (moonPhaseMajor + 1) / 4.0F;
+        float f4 = (moonPhaseMinor + 1) / 2.0F;
+        bufferbuilder.begin(7, DefaultVertexFormats.POSITION_TEX);
+        bufferbuilder.pos(-20.0F, -100.0D, 20.0F).tex(f3, f4).endVertex();
+        bufferbuilder.pos(20.0F, -100.0D, 20.0F).tex(f1, f4).endVertex();
+        bufferbuilder.pos(20.0F, -100.0D, -20.0F).tex(f1, f2).endVertex();
+        bufferbuilder.pos(-20.0F, -100.0D, -20.0F).tex(f3, f2).endVertex();
+        tessellator.draw();
+        */
+
         GlStateManager.disableTexture2D();
         float starBrightness = world.getStarBrightness(partialTicks);
 

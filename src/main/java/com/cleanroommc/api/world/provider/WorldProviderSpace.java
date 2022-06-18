@@ -1,7 +1,7 @@
-package com.cleanroommc.api.word.provider;
+package com.cleanroommc.api.world.provider;
 
 import com.cleanroommc.api.render.SpaceSkyRenderer;
-import com.cleanroommc.api.word.generator.ChunkGeneratorSpace;
+import com.cleanroommc.api.world.generator.ChunkGeneratorSpace;
 import com.cleanroommc.config.GRConfig;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.DimensionType;

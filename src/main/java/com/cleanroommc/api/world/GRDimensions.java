@@ -1,6 +1,6 @@
-package com.cleanroommc.api.word;
+package com.cleanroommc.api.world;
 
-import com.cleanroommc.api.word.provider.WorldProviderSpace;
+import com.cleanroommc.api.world.provider.WorldProviderSpace;
 import com.cleanroommc.config.GRConfig;
 import net.minecraft.world.DimensionType;
 import net.minecraftforge.common.DimensionManager;
