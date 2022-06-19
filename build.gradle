@@ -73,7 +73,9 @@ dependencies {
 	if (project.use_mixins.toBoolean()) {
 		deobfCompile 'zone.rong:mixinbooter:4.2'
     }
-	deobfCompile 'curse.maven:modularui-624243:3824048'
+    deobfCompile 'curse.maven:modularui-624243:3824048'
+    deobfCompile 'curse.maven:had-enough-items-557549:3831825'
+    deobfCompile 'curse.maven:the-one-probe-245211:2667280'
 }
 
 sourceSets {
